@@ -11,7 +11,7 @@ Basic usage:
     
     function foo(callbackObject) {
         console.log('Foo' + callbackObject.step + ': ' + this.time);
-        if (this.time > 5000) {
+        if (this.time >= 5000) {
             this.unregister(foo);
         }
     }
